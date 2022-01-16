@@ -1,14 +1,25 @@
 <template>
   <div id="app">
     <h1>黑马头条</h1>
-    <router-view/>
+    <i class="iconfont iconlishi"></i>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="default">默认按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+    <van-button type="danger">危险按钮</van-button>
+    <van-search v-model="value" placeholder="请输入搜索关键词" />
+    <router-view />
   </div>
 </template>
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      value: ''
+    }
+  }
 }
 </script>
 <style lang="less">
-
 </style>
